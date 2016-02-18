@@ -61,7 +61,7 @@ my $JOB_CHECK_PAUSE = 10;	# Number of seconds to wait between checking status of
 
 my @kmersizes;
 if ($kmersizesinput) {
-	@kmersizes = split(/,/, $kmersizesinput);
+	@kmersizes =  split(/,/, $kmersizesinput); #split(/,/, $kmersizesinput);
 }
 else {	
 	# If no k-mer sizes specified, do calculations for all k-mers from 15-32bp (these are sizes for which eland executables are available)
